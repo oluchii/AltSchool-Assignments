@@ -1,127 +1,179 @@
+/* Resetting styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f4f7;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
+/* Header section */
+header {
+  background-color: #ffffff;
+  padding: 20px 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.checkout-box {
-    width: 65%;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.checkout-header {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 30px;
+nav .logo-img img {
+  width: 120px;
 }
 
-.logo img {
-    height: 40px;
+nav ul {
+  display: flex;
+  gap: 20px;
 }
 
-.checkout-form h1 {
-    font-size: 30px;
-    margin-bottom: 30px;
+nav button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
 }
 
-.form-section h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
+nav i {
+  display: none;
+}
+
+/* Checkout section */
+.checkout-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* White background section */
+.white-bg {
+  width: 60%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.white-bg h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.form-1, .form-2 {
+  margin-bottom: 20px;
+}
+
+.num-span {
+  font-weight: bold;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-button.submit-btn {
-    width: 100%;
-    padding: 15px;
-    background-color: #28a745;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-button.submit-btn:hover {
-    background-color: #218838;
+button:hover {
+  background-color: #218838;
 }
 
-.sidebar {
-    width: 30%;
-    background-color: #007bff;
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.first-p {
+  font-size: 14px;
 }
 
-.plan-info h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+.first-p span {
+  color: #007bff;
 }
 
-.price {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.second-p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
 }
 
-ul {
-    list-style: none;
-    margin-bottom: 20px;
+.second-p .span-4 {
+  font-weight: bold;
 }
 
-ul li {
-    font-size: 14px;
-    margin-bottom: 10px;
+/* Blue background section */
+.blue-bg {
+  width: 35%;
+  background-color: #007bff;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.freelancer p {
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-a:hover {
-    text-decoration: underline;
+.checked-mark {
+  color: #28a745;
 }
 
-.testimonial {
-    font-size: 14px;
-    font-style: italic;
-    margin-top: 20px;
+.clients p {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
-.testimonial-author {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clients .img {
+  margin-top: 20px;
+}
+
+.clients .img img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.clients .img p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+footer span {
+  color: #007bff;
+  cursor: pointer;
 }
