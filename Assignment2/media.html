@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Story - Media Page</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../Assignment1/index.html">Home</a></li>
+            <li><a href="../Assignment1/form.html">Application Form</a></li>
+            <li><a href="../Assignment2/table.html">AltSchool Courses</a></li>
+            <li><a href="media.html">Media Page</a></li>
+            <li><a href="#top">Back to Top</a></li>
+        </ul>
+    </nav>
+
+    <div id="top"></div> <!-- Fragment Identifier -->
+
+    <header>
+        <h1>Welcome to My Story</h1>
+        <p>A powerful message about myself using various media elements.</p>
+    </header>
+
+    <!-- Picture element with responsiveness -->
+    <h2>My Picture</h2>
+    <picture>
+        <img srcset="media/Luu.png 480w,
+                     media/Luu.png 800w"
+             sizes="(max-width: 600px) 480px,
+                    800px"
+             src="media/Luu.png" alt="A picture of myself" width="500" height="600">
+    </picture>
+
+    <!-- Video element -->
+    <h2>My Journey</h2>
+    <video controls width="500" height="500">
+        <source src="media/VID-20240312-WA0008.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio element -->
+    <h2>My Favorite Music</h2>
+    <audio controls>
+        <source src="media/03 CHIHIRO - (SongsLover.com).mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Embedded YouTube Video -->
+    <h2>My Inspiration</h2>
+    <video controls width="500" height="500" loop muted preload="auto">
+        <source src="media/Why I Love Being a Cloud Engineer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Footer -->
+    <footer>
+         <address>
+        Festac, Lagos.
+      </address>
+        <p>&copy; 2025 Luu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
