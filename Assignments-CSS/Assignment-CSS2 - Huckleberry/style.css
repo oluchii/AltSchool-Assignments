@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+    text-align: left;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 650px;
+        line-height: 1.6;
+}
+
+.hero h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.highlight-green {
+    font-weight: bold;
+    color: #008000; /* Green color */
+}
+
+
+/* Operations Section */
+.operations {
+    background-color: #555;
+    padding: 80px 20px;
+    border-top: 8px solid #999999;
+    display: flex;
+    justify-content: center;
+}
+
+.operations-container {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.operations-card {
+    background-color: white;
+    padding: 40px;
+    max-width: 700px;
+    position: relative;
+    border-bottom: 8px solid #999999;
+    transform: translateY(-20px); 
+}
+
+/* Title Badge */
+.operations-title {
+    background-color: #FFC107; /* Yellow background */
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    border-bottom: 10px solid #cc9900;
+    top: 10px;
+    left: -10px;
+    white-space: nowrap;
+}
+
+/* Content */
+.operations-text {
+    margin-top: 40px;
+}
+.operations-text p {
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero, .operations {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .operations-card {
+        max-width: 550px;
+        padding: 30px;
+    }
+
+    .operations-title {
+        font-size: 14px;
+        padding: 12px 18px;
+        top: -18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero, .operations {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .operations-card {
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    .operations-title {
+        font-size: 13px;
+        padding: 10px 15px;
+        left: -5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero, .operations {
+        padding: 20px 5px;
+    }
+
+    .hero h1 {
+        font-size: 10px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .operations-card {
+        max-width: 100%;
+        padding: 20px;
+        transform: none; 
+    }
+
+    .operations-title {
+        font-size: 12px;
+        padding: 8px 12px;
+        left: 5px;
+    }
+}
