@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Application Form</a></li>
+            <li><a href="#top">Back to Top</a></li>
+        </ul>
+    </nav>
+
+    <div id="top"></div> <!-- Fragment Identifier -->
+
+    <!-- Top Right Sign-In Link -->
+    <div>
+        <p>Already an AltScholar? <a href="#">Sign In!</a></p>
+    </div>
+
+    <header>
+        <h1>Signup</h1>
+        <p>Take the next steps to apply at AltSchool Africa.</p>
+    </header>
+
+    <form action="#" method="POST">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="country">Country of Residence:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="state">State of Residence:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+        <label for="referral">How did you hear about us?</label>
+        <input type="text" id="referral" name="referral"><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">By clicking continue, I agree to the <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</label><br><br>
+
+        <button type="submit">Signup</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+         <address>
+        Festac, Lagos.
+      </address>
+        <p>&copy; 2025 Luu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
